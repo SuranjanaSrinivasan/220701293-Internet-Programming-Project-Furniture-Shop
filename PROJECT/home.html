@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop - Home</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Furniture Shop</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Categories</a>
+                <ul class="dropdown-menu">
+                    <li><a href="category.html?category=bed">Bed</a></li>
+                    <li><a href="category.html?category=dining">Dining Table</a></li>
+                    <li><a href="category.html?category=sofa">Sofa</a></li>
+                    <li><a href="category.html?category=tv">TV Stand</a></li>
+                    <li><a href="category.html?category=bookshelf">Bookshelf</a></li>
+                    <li><a href="category.html?category=decors">Decors</a></li>
+                    <li><a href="category.html?category=others">Others</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <section class="slideshow">
+        <div class="slides">
+            <img src="offer1.jpg" alt="Offer 1" class="slide active">
+            <img src="offer2.jpg" alt="Offer 2" class="slide">
+            <img src="offer3.jpg" alt="Offer 3" class="slide">
+        </div>
+        <div class="slide-controls">
+            <span onclick="currentSlide(1)"></span>
+            <span onclick="currentSlide(2)"></span>
+            <span onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+    <!-- Popular Products Section -->
+    <section class="popular-products">
+        <h2>Popular Products</h2>
+        <!-- Products will be added here -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="placeholder.jpg" alt="Product 1">
+                <p class="product-name">Product 1</p>
+                <p class="product-price">$100</p>
+                <button onclick="addToCart('Product 1')">Add to Cart</button>
+                <button onclick="addToWishlist('Product 1')">Add to Wishlist</button>
+            </div>
+            <!-- Repeat similar product-cards for other products -->
+        </div>
+    </section>
+
+    <script src="script2.js"></script>
+</body>
+</html>

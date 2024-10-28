@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop - Category</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Furniture Shop</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Categories</a>
+                <ul class="dropdown-menu">
+                    <li><a href="category.html?category=bed">Bed</a></li>
+                    <li><a href="category.html?category=dining">Dining Table</a></li>
+                    <li><a href="category.html?category=sofa">Sofa</a></li>
+                    <li><a href="category.html?category=tv">TV Stand</a></li>
+                    <li><a href="category.html?category=bookshelf">Bookshelf</a></li>
+                    <li><a href="category.html?category=decors">Decors</a></li>
+                    <li><a href="category.html?category=others">Others</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Category Items Section -->
+    <section class="category-items">
+        <h2>Category: Bed</h2> <!-- Adjust this dynamically based on selected category -->
+        <div class="product-grid">
+            <!-- Sample Product Card -->
+            <div class="product-card" data-name="Modern Bed" data-price="299" data-id="1">
+                <img src="bed1.jpg" alt="Modern Bed">
+                <p class="product-name">Modern Bed</p>
+                <p class="product-price">$299</p>
+                <button onclick="addToCart('Modern Bed', 299, '1')">Add to Cart</button>
+                <button onclick="addToWishlist('Modern Bed', 299, '1')">Add to Wishlist</button>
+            </div>
+            <!-- Repeat similar product cards for other items in the category -->
+            <div class="product-card" data-name="Classic Bed" data-price="399" data-id="2">
+                <img src="bed2.jpg" alt="Classic Bed">
+                <p class="product-name">Classic Bed</p>
+                <p class="product-price">$399</p>
+                <button onclick="addToCart('Classic Bed', 399, '2')">Add to Cart</button>
+                <button onclick="addToWishlist('Classic Bed', 399, '2')">Add to Wishlist</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script3.js"></script>
+</body>
+</html>
+
+
